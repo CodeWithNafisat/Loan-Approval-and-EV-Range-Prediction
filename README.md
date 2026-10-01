@@ -34,7 +34,7 @@ The test results look reasonable at first glance: accuracy of 0.681, precision o
 
 The confusion matrix tells a different story. The model flagged 222 approved loans correctly and missed one, but it identified none of the 103 rejected applications. It predicted "approved" for essentially every case.
 
-<img width="1366" height="768" alt="Screenshot (46)" src="https://github.com/user-attachments/assets/3fb6f860-649f-4e1f-b24e-437a0daabfa9" />
+<img width="1366" height="768" alt="Screenshot (46)" src="https://github.com/user-attachments/assets/4d49d327-0004-40ae-882c-5d332a3f8644" />
 
 
 The accuracy of 0.681 is almost exactly the share of approved loans in the test set (223 of 326, or 68.4%). So the model has not learned to separate the two outcomes, and the high recall and F1 come from approving everything, not from skill.
@@ -67,7 +67,7 @@ On the held-out test set the model reached an R² of 0.8813, an MAE of 27.4 km a
 
 I also ran the standard checks for a linear model: scatter plots of each selected feature against range, a histogram of the residuals, and a plot of residuals against predictions.
 
-<img width="1366" height="768" alt="Screenshot (47)" src="https://github.com/user-attachments/assets/151bf673-9f5b-450a-ab8b-2fa79dcd0de0" />
+<img width="1366" height="768" alt="Screenshot (47)" src="https://github.com/user-attachments/assets/61c30554-0771-4191-8d39-3b465b7906ee" />
 
 ---
 
